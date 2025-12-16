@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("snake_background.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    mask-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(94, 253, 94), rgb(253, 253, 66));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+.head{
+    background: linear-gradient(rgb(0, 77, 3), rgb(72, 72, 240));
+    border-radius: 3px;
+    transform: scale(1.02);
+    box-shadow:0 1vmin 1vmin black;
+}
+.food{
+    background-color: rgb(255, 0, 0);
+    border: .5vmin solid rgb(255, 0, 0);
+    border-radius: 8px;
+    box-shadow:0 1vmin 1vmin black;
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 6px;
+    box-shadow:0 1vmin 1vmin black;
+}
+#score{
+    position: fixed;  
+    top: 20px;
+    right: 30px;
+    font-size: 39px;
+    font-weight: bold;
+    z-index: 10;
+}
